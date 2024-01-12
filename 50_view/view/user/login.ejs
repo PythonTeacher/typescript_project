@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../header'); %>
+  <body>
+    <%- include('../nav'); %>
+
+    <!-- Start your project here-->
+
+    <!-- Jumbotron -->
+    <div class="p-5 text-center bg-light mb-5">
+      <h1 class="mb-3">Log In</h1>
+    </div>
+    <!-- Jumbotron -->
+
+    <form action="/user/login" method="post">
+      <div class="container mb-5">
+        <div class="form-outline mb-3">
+          <input type="email" name="email" class="form-control" required />
+          <label class="form-label" for="email">Input email</label>
+        </div>
+        <div class="form-outline mb-3">
+          <input type="password" name="password" class="form-control" required />
+          <label class="form-label" for="password">Input password</label>
+        </div>
+      </div>
+      <div class="container mb-5">  
+        <button class="btn btn-primary">Log In</button>
+      </div>
+    </form>
+
+    <!-- End your project here-->
+    <%- include('../footer'); %>
+    
+  </body>
+</html>

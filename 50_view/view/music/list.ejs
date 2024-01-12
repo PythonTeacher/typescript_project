@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../header'); %>
+  <body>
+    <%- include('../nav'); %>
+
+    <!-- Start your project here-->
+
+    <!-- Jumbotron -->
+    <div class="p-5 text-center bg-light mb-5">
+      <h1 class="mb-3">Music List</h1>
+    </div>
+    <!-- Jumbotron -->
+
+    <div class="container mb-5">
+      <div class="row">
+    
+        <% result.forEach((m, index) => { %>
+          <!-- First column -->
+          <div class="col-md">
+      
+            <!-- Card -->
+            <div class="card" style="width: 18rem;">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid" />
+                <a href="/music/<%= m.id %>">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><%= m.singer %></h5>
+                <p class="card-text"><%= m.title %></p>
+              </div>
+            </div>
+            <!-- Card -->
+      
+          </div>
+          <!-- First column -->    
+
+        <% }) %>
+      </div>      
+    </div>
+    
+    <div class="container mb-5">
+      <a href="/music/new" class="btn btn-primary">Create</a>
+    </div>
+    <!-- End your project here-->
+
+    <%- include('../footer'); %>
+
+  </body>
+</html>
