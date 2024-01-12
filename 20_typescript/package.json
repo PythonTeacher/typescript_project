@@ -1,0 +1,12 @@
+{
+  "name": "20_typescript",
+  "version": "1.0.0",
+  "description": "* 자바스크립트에 타입을 부여한 언어\r * 자바스크립트의 슈퍼셋인 오픈소스 프로그래밍 언어\r   (모든 자바스크립트 코드는 타입스크립트로 동작)\r * MS에서 개발, 유지보수하고 있으며 엄격한 문법을 지원\r * 클라이언트 사이드와 서버 사이드를 위한 개발에 사용\r * 자신이 원하는 타입을 정의하고 프로그래밍을 하면 자바스크립트로 컴파일되어 실행 (트랜스파일러)\r * https://www.typescriptlang.org/ -> strongly typed programming language\r * 장점\r   * 타입 안정성(Type Safety) 제공\r   * 강력한 타입으로 대규모 어플리케이션 개발에 용이 (에러의 사전 방지) -> 코드의 품질 향상\r   * 개발 도구에서의 강력한 지원 (코드 가이드 및 자동완성) -> 개발생산성 향상\r * https://github.com/microsoft",
+  "main": "hello.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

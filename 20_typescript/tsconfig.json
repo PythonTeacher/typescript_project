@@ -1,0 +1,25 @@
+{
+  // JS 파일로 변환할 TS 파일 지정
+  // "files": ["hello.ts", "abc.ts"],
+  // 폴더로 지정
+  "include": [
+    "src/**/*.ts"   // **: 하위 디렉토리를 재귀적으로 접근, *.ts: 확장자가 ts인 모든 파일
+  ],
+  // 변환하지 않을 폴더 지정
+  "exclude": [
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    // TS 파일 컴파일 시 생성되는 자바스크립트 버전
+    "target": "ES5",
+    // TS 파일을 JS 파일로 컴파일할 때 포함될 라이브러리 목록
+    "lib": [
+      "ES2015",   // ES6에서 추가된 기능을 사용할 때 (예: Promise)
+      "DOM"       // console.log 지원을 위해 필요, TS은 DOM 타이핑을 사용해서 전역변수로 사용하는 경우 체킹을 함
+    ],
+    // 암시적 any타입 허용 안함
+    "noImplicitAny": true
+  }
+}
