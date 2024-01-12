@@ -1,0 +1,28 @@
+import { Request, Response } from "express";
+
+// 등록
+const create = (req: Request, res: Response)  => {
+  res.send("movie create");
+};
+
+// 목록조회
+const list = (req: Request, res: Response) => {
+  res.send("movie list");
+};
+
+// 상세조회
+const detail = (req: Request, res: Response)  => {
+  res.send(`movie detail : ${req.params.id}`);
+};
+
+// 변경
+const update = (req: Request, res: Response)  => {
+  res.send(`movie update : ${req.params.id}`);
+};
+
+// 삭제
+const remove = (req: Request, res: Response)  => {
+  res.send(`movie delete : ${req.params.id}`);
+};
+
+export { create, list, detail, update, remove };

@@ -1,0 +1,4 @@
+{
+  "exec": "ts-node middleware.ts",
+  "ext": "js json ts"
+}
